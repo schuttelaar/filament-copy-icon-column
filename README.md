@@ -1,6 +1,6 @@
 # filament-copy-icon-column
 
-Just an icon to copy whatever you want from a table row. The default in Filament is to add "copyable" toggle to an existing text field which adds the icon. This provides just an icon that copies for instance a calculated value (for instance an url generated from a hash).
+Just an icon to copy whatever you want from a table row. In Filament you can make any textfield "copyable", but you can't add an icon without connecting it to a displayed text column. So this package provides just an seperate column with an icon that can copy for instance a calculated value (for instance an url generated from a hash).
 
 The icon can be customized.
 

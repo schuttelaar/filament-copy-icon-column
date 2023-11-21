@@ -1,12 +1,12 @@
 # filament-copy-icon-column
 
-Just an icon to copy whatever you want from a table row. In Filament you can make any textfield "copyable", but you can't add an icon without connecting it to a displayed text column. So this package provides just an seperate column with an icon that can copy for instance a calculated value (for instance an url generated from a hash).
+In Filament you can make any textfield "copyable", but you can't add a copy icon without connecting it to a text column. This package provides a seperate icon column, which copies text. 
 
-The icon can be customized.
+The text copied can be anything, for instance a url generated from a stored hash. The icon can be customized like any other icon in filament. 
 
 ```
 CopyIconColumn::make('copy')
 ->copyableState(fn (Model $record): string => 'https://www.mydomainname.com/' $record['hash'])
-->copyMessage('Link was copied to clipboard')
+->copyMessage('Custom link was copied to clipboard')
 ->icon('heroicon-o-clipboard-document-list'),
 ```
